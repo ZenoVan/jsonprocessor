@@ -96,7 +96,7 @@ public class JsonProcessor {
         saveJson(val, path + "/output/val-" + fileName);
     }
 
-    private void saveJson(JSONObject json, String filePath){
+    public void saveJson(JSONObject json, String filePath){
         String writeString = JSON.toJSONString(json, SerializerFeature.PrettyFormat);
 
 //        System.out.println(writeString);
